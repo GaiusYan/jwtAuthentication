@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'authentification</title>
+
+    <!-- Lien vers Bootstrap via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2 class="text-center mb-4">Connexion</h2>
+
+        <!-- Formulaire d'authentification -->
+        <form method="POST" id="authentificationForm">
+            <!-- Champ pour le nom d'utilisateur -->
+            <div class="mb-3">
+                <label for="username" class="form-label">Nom d'utilisateur</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+
+            <!-- Champ pour le mot de passe -->
+            <div class="mb-3">
+                <label for="password" class="form-label">Mot de passe</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+
+            <!-- Bouton de soumission -->
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Se connecter</button>
+            </div>
+        </form>
+
+        <!-- Lien pour s'inscrire -->
+        <p class="mt-3 text-center">
+            Pas encore inscrit ? <a href="signup.php">Créer un compte</a>
+        </p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-wo8nY9lzo6O+0XH5/7X07M7yLppQQnUl/yhU/5PQwK4UEFGZCl8I2z0YJn/rEEz3" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
